@@ -8,9 +8,11 @@ import {
   AiOutlineClockCircle,
   AiOutlineUser,
 } from 'react-icons/ai';
+import Header from '../../components/Header';
 
 import { getPrismicClient } from '../../services/prismic';
 
+import commonStyles from '../../styles/common.module.scss';
 import styles from './post.module.scss';
 
 interface Post {
@@ -59,12 +61,13 @@ export default function Post({ post }: PostProps): JSX.Element {
 
   return (
     <>
+      <Header />
       <div className={styles.container}>
         <div>
           <img src={post.data.banner.url} alt="banner" />
 
           <h1>{post.data.title}</h1>
-          <section className={styles.group}>
+          <section className={commonStyles.group}>
             <time>
               {' '}
               <span>

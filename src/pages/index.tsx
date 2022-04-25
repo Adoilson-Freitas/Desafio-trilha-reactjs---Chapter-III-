@@ -7,6 +7,7 @@ import { ptBR } from 'date-fns/locale';
 import Link from 'next/link';
 import { getPrismicClient } from '../services/prismic';
 
+import commonStyles from '../styles/common.module.scss';
 import styles from './home.module.scss';
 
 interface Post {
@@ -52,7 +53,7 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
             <a key={post.uid} className={styles.content}>
               <h1>{post.data.title}</h1>
               <p>{post.data.subtitle}</p>
-              <div className={styles.group}>
+              <div className={commonStyles.group}>
                 <time>
                   {' '}
                   <span>
