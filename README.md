@@ -33,10 +33,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ```bash
 # Clone este repositório
-$ https://github.com/Adoilson-Freitas/Desafio-trilha-reactjs---Chapter-III-.git
-
+$ https://github.com/Adoilson-Freitas/SpaceTraveling-desafio-Ignite.git
 # Acesse a pasta do projeto no terminal/cmd
-$ cd Desafio-trilha-reactjs---Chapter-III
+$ cd SpaceTraveling-desafio-Ignite
 
 # Instale as dependências
 $ yarn
